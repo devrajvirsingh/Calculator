@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #dddddd;
+  font-family: "Ubuntu", sans-serif;
+}
+.calculator-box {
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 20px;
+  position: relative;
+  top: 200px;
+}
+.input-part {
+  background-color: #36474f;
+  height: 200px;
+  padding: 20px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.input-part input {
+  height: 60px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  text-align: end;
+  margin-top: 20px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.heading {
+  color: white;
+  font-size: 50px;
+}
+.buttons-part {
+  background-color: #18202a;
+  padding: 20px;
+  width: 100%;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.row {
+  text-align: center;
+}
+.btn {
+  height: 60px;
+  width: 20%;
+  font-size: 30px;
+  color: white;
+  background-color: transparent;
+  padding: 5px;
+  margin: auto;
+  cursor: pointer;
+  border: none;
+}
+.btn-white {
+  background-color: white;
+  height: 60px;
+  width: 20%;
+  border-radius: 30px;
+  font-size: 30px;
+  padding: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+.btn-eq {
+  background-color: #ff6531;
+  height: 60px;
+  width: 20%;
+  border-radius: 30px;
+  font-size: 30px;
+  padding: 5px;
+  cursor: pointer;
+}
+.btns {
+  margin: 10px 20px;
+}
+
+@media (min-width: 1130px) and (max-width: 2010px) {
+  .row {
+    text-align: unset;
+  }
+  .btns {
+    margin: 5px 10px;
+  }
+}
+@media (min-width: 680px) and (max-width: 1129px) {
+  .row {
+    text-align: unset;
+  }
+  .btns {
+    margin: 5px 5px;
+  }
+  .calculator-box {
+    width: 80%;
+  }
+}
+@media (min-width: 560px) and (max-width: 679px) {
+  .row {
+    text-align: unset;
+  }
+  .btns {
+    margin: 5px 10px;
+  }
+  .calculator-box {
+    width: 90%;
+  }
+}
+@media (min-width: 345px) and (max-width: 559px) {
+  .row {
+    text-align: center;
+  }
+  .btns {
+    margin: 5px 5px;
+  }
+  .calculator-box {
+    width: 90%;
+  }
+}
